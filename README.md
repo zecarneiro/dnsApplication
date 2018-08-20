@@ -1,1 +1,1 @@
-dnsApplication
+dns_app
