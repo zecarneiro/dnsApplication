@@ -126,6 +126,12 @@ getListServer(){
 	commandLsFilderServer=$(ls $localization)
 	index="0"
 
+	newLineEmpty "1"
+	if [ -f $serverActivedFile ]; then
+		local activedDNS=$(cat $serverActivedFile)
+		echo "Active DNS: $activedDNS"
+	fi
+
 	newLineEmpty "2"
 	echo "List of DNS Server available:"
 
